@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB FORM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <h1 class="top">Registration Form</h1>
+
+        <form id="userForm" onsubmit="return validateForm()">
+            <label>Full Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+
+            <label>Email:</label>
+            <input type="text" id="email" placeholder="username@example.com">
+
+            <label>Mobile Number:</label>
+            <input type="text" id="mobile" placeholder="10-digit number">
+
+            <label>Gender:</label>
+            <div class="radio-group">
+                <input type="radio" name="gender" value="Male"> Male
+                <input type="radio" name="gender" value="Female"> Female
+            </div>
+
+            <label>Hobbies:</label>
+            <div class="checkbox-group">
+                <input type="checkbox" name="hobby" value="Reading"> Reading
+                <input type="checkbox" name="hobby" value="Gaming"> Gaming
+                <input type="checkbox" name="hobby" value="Dancing"> Dancing
+                <input type="checkbox" name="hobby" value="Music"> Music
+            </div>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
